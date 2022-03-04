@@ -1,11 +1,12 @@
 const Intern = require('../lib/Intern')
 
 describe('Intern Class detail', () => {
-    it('creates an obj with properties', () => {
-    const intern = new Intern(12345, 'Bob')
+    describe('Init', () => {
+        it('creates an object with properties id & name', () => {
+            const intern = new Intern(12345, 'Bob')
 
-    expect(intern.id).toEqual(12345);
-    expect(intern.name).toEqual('Bob');
-    
+            expect(intern.id).toEqual(12345);
+            expect(intern.name).toEqual('Bob');
+        });
     });
 });
